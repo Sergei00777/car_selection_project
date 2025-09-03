@@ -1,0 +1,105 @@
+<!-- templates/expert.html -->
+{% extends "base.html" %}
+
+{% block title %}Что мы проверяем - ProAuto{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>Что мы проверяем</h1>
+        <p>Профессиональная диагностика по 100+ параметрам</p>
+    </div>
+</section>
+
+<section class="service-details">
+    <div class="container">
+        <div class="service-header">
+            <h2>Комплексная проверка автомобиля</h2>
+            <div class="founder-quote">
+                <div class="founder-photo">
+                    <img src="{{ url_for('static', filename='images/sergey-petrusenko.jpg') }}" alt="Петрусенко Сергей, Основатель компании ProAvto">
+                </div>
+                <div class="quote-content">
+                    <p class="service-description">
+                        Моя цель — не продать вам авто, а подарить ощущение, что каждая поездка будет начинаться с уверенности в завтрашнем дне.
+                    </p>
+                    <p class="founder-name">
+                        Петрусенко Сергей, Основатель компании ProAvto
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Остальная часть кстается без изменений -->
+<section class="inspection-details">
+    <div class="container">
+        <h2>Техническая сторона</h2>
+        <p class="section-subtitle">Детальная проверка всех технических систем автомобиля</p>
+
+        <div class="inspection-grid">
+            <!-- ... остальные элементы проверки ... -->
+        </div>
+    </div>
+</section>
+
+<section class="inspection-details" style="background: #f8f9fa;">
+    <div class="container">
+        <h2>Юридическая сторона</h2>
+        <p class="section-subtitle">Комплексная проверка юридической чистоты автомобиля</p>
+
+        <div class="inspection-grid">
+            <!-- ... остальные элементы проверки ... -->
+        </div>
+    </div>
+</section>
+
+<style>
+    .founder-quote {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .founder-photo {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #f8f9fa;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .quote-content {
+        flex: 1;
+    }
+
+    .founder-name {
+        font-style: italic;
+        margin-top: 1rem;
+        color: #495057;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .founder-quote {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .founder-photo {
+            width: 120px;
+            height: 120px;
+        }
+    }
+</style>
+{% endblock %}

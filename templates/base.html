@@ -1,0 +1,47 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Подбор автомобилей{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип ProAuto">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Главная</a></li>
+                <li><a href="{{ url_for('key_selection') }}">Подбор под ключ</a></li>
+                <li><a href="{{ url_for('expert') }}">Эксперт</a></li>
+                <li><a href="{{ url_for('prices') }}">Цены</a></li>
+                <li><a href="{{ url_for('urgent_buyout') }}">Срочный выкуп авто</a></li>
+                <li><a href="{{ url_for('diagnostic') }}">Выездная диагностика</a></li>
+                <li><a href="{{ url_for('expert_on_duty') }}">Эксперт на день</a></li>
+                <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy;  2024 ProAuto. Все права защищены.</p>
+            <p></p>
+            <p>&copy; Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости автомобилей, пожалуйста, обратитесь к менеджерам автосалона. Осуществляя навигацию по сайту, вы даете нам право запоминать и иметь доступ к куки-файлам на вашем устройстве доступа к интернету.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+car_selection_project/
+├── app.py
+├── config.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── logo.png
+│       └── favicon.ico
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── key_selection.html
+    ├── expert.html
+    ├── prices.html
+    ├── contacts.html
+    ├── urgent_buyout.html
+    ├── diagnostic.html
+    └── expert_on_duty.html
