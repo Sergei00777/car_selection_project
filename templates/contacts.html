@@ -6,111 +6,177 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <h1>Наши контакты</h1>
-        <p>Свяжитесь с нами удобным для вас способом</p>
+        <h1>Контакты</h1>
+        <p>Мы всегда на связи, чтобы помочь вам с выбором автомобиля</p>
     </div>
 </section>
 
-<section class="service-details">
+<!-- Основная контактная информация и карта -->
+<section class="contacts-main">
     <div class="container">
-        <div class="features-grid">
-            <!-- Контактная информация -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"/>
-                    </svg>
+        <div class="contacts-grid">
+
+            <!-- Блок с контактными данными -->
+            <div class="contacts-info">
+                <h2>Свяжитесь с нами</h2>
+                <p class="contacts-description">Наша команда экспертов готова ответить на ваши вопросы и помочь найти идеальный автомобиль.</p>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12.5C13.6569 12.5 15 11.1569 15 9.5C15 7.84315 13.6569 6.5 12 6.5C10.3431 6.5 9 7.84315 9 9.5C9 11.1569 10.3431 12.5 12 12.5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M19 9.5C19 16.5 12 21.5 12 21.5C12 21.5 5 16.5 5 9.5C5 7.97826 5.63214 6.52943 6.75736 5.44427C7.88258 4.35911 9.4087 3.75 11 3.75C12.5913 3.75 14.1174 4.35911 15.2426 5.44427C16.3679 6.52943 17 7.97826 17 9.5V9.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Адрес</h3>
+                        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="addressLocality">г. Иркутск</span>, <span itemprop="streetAddress">ул. Депутатская, 22</span>
+                        </p>
+                    </div>
                 </div>
-                <h3>Адрес</h3>
-                <p>г. Иркутск, ул. Депутатская, 22</p>
-                <div class="service-img-container">
-                    <img src="{{ url_for('static', filename='images/fotoadres.jpg') }}" alt="Наш офис" class="service-img" style="margin-top: 1rem; border-radius: 8px;">
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.52 21.53 20.99 20.97 21.02C20.43 21.05 19.85 21.07 19.24 21.08C10.73 21.08 3.91999 14.27 3.91999 5.75999C3.91999 5.14999 3.93999 4.56999 3.96999 4.02999C4.00999 3.46999 4.47999 3 5.07999 3H8.07999C8.57999 3 8.98999 3.36999 9.02999 3.86999C9.05999 4.32999 9.08999 4.79999 9.11999 5.27999C9.21999 6.47999 9.39999 7.63999 9.63999 8.72999C9.72999 9.12999 9.57999 9.52999 9.26999 9.78999L7.78999 11.07C9.05999 13.77 11.2 15.9 13.91 17.17L15.19 15.69C15.46 15.38 15.86 15.23 16.25 15.32C17.34 15.56 18.5 15.74 19.7 15.84C20.19 15.87 20.58 16.29 20.58 16.78V16.92H22Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+79041111481" itemprop="telephone" style="color: #007bff; text-decoration: none;">+7 (9041) 111 481</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 7.00002L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:oni007@mail.ru" style="color: #007bff; text-decoration: none;">oni007@mail.ru</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Режим работы</h3>
+                        <p>Понедельник - Воскресенье: <strong>10:00 - 19:00</strong></p>
+                    </div>
+                </div>
+
+                <!-- Соцсети перенесены сюда -->
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8H19C20.1046 8 21 8.89543 21 10V18C21 19.1046 20.1046 20 19 20H10C8.89543 20 8 19.1046 8 18V17M8 10H5C3.89543 10 3 10.8954 3 12V19C3 20.1046 3.89543 21 5 21H12C13.1046 21 14 20.1046 14 19V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M17.5 6.5V2.5M17.5 2.5H13.5M17.5 2.5L13.5 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Мы в соцсетях</h3>
+                        <div class="social-links">
+                            <a href="https://t.me/PSergei007" target="_blank" class="social-link" aria-label="Наш Telegram">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.24-.02-.1.02-1.79 1.14-5.06 3.35-.48.33-.92.49-1.32.48-.43-.01-1.26-.24-1.87-.44-.75-.24-1.35-.37-1.3-.78.02-.17.2-.34.53-.52 2.05-1.06 3.43-1.77 5.42-2.71 2.57-1.2 3.09-1.41 3.44-1.41.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/79041111481" target="_blank" class="social-link" aria-label="Наш WhatsApp">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335 .157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488"/>
+                                </svg>
+                            </a>
+                            <a href="https://max.ru/u/f9LHodD0cOK-0qj67sp3D4Zpo-HexV5mx_Ii7eG-tx305EYAsert5MTPodw" target="_blank" class="social-link" aria-label="Наш MAX">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m-.84 12.73h-1.19c-.45 0-.57-.28-1.22-1.08l-.92-1.17c-.23-.28-.33-.23-.33.15v1.75c0 .21-.06.35-.51.35h-1.6c-.28 0-.4-.13-.4-.35v-3.6c0-.61.17-.84.68-.84h2.61c.28 0 .39.11.39.33v2.94c0 .28.11.23.33-.08l1.03-2.57c.11-.28.23-.28.56-.28h1.64c.39 0 .45.17.34.45l-1.48 3.34c-.17.39-.22.5 0 .5h1.19c.33 0 .45.17.33.45l-.14.22c-.17.33-.45.45-.78.45z"/>
+                                </svg>
+                            </a>
+                            <a href="https://vk.com" target="_blank" class="social-link" aria-label="Наша группа ВКонтакте">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m-.84 12.73h-1.19c-.45 0-.57-.28-1.22-1.08l-.92-1.17c-.23-.28-.33-.23-.33.15v1.75c0 .21-.06.35-.51.35h-1.6c-.28 0-.4-.13-.4-.35v-3.6c0-.61.17-.84.68-.84h2.61c.28 0 .39.11.39.33v2.94c0 .28.11.23.33-.08l1.03-2.57c.11-.28.23-.28.56-.28h1.64c.39 0 .45.17.34.45l-1.48 3.34c-.17.39-.22.5 0 .5h1.19c.33 0 .45.17.33.45l-.14.22c-.17.33-.45.45-.78.45z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"/>
-                    </svg>
-                </div>
-                <h3>Телефон</h3>
-                <p><a href="tel:+79041111481" style="color: #007bff; text-decoration: none;">+7 (9041) 111 481</a></p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"/>
-                    </svg>
-                </div>
-                <h3>Время работы</h3>
-                <p>Пн-Вс: 10:00-19:00</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"/>
-                    </svg>
-                </div>
-                <h3>Электронная почта</h3>
-                <p><a href="mailto:oni007@mail.ru" style="color: #007bff; text-decoration: none;">oni007@mail.ru</a></p>
+            <!-- Блок с картой -->
+            <div class="contacts-map">
+                <h2>Мы находимся</h2>
+                <div id="map" style="width: 100%; height: 400px; border-radius: 8px; margin-top: 1rem;"></div>
+                <!-- Замените YOUR_API_KEY на ваш ключ от Яндекс.Карт -->
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+                <script type="text/javascript">
+                    ymaps.ready(init);
+                    function init(){
+                        var myMap = new ymaps.Map("map", {
+                            center: [52.286387, 104.280663], // Координаты ул. Депутатская, 22, Иркутск
+                            zoom: 16
+                        });
+                        var myPlacemark = new ymaps.Placemark([52.286387, 104.280663], {
+                            hintContent: 'ProAuto',
+                            balloonContent: 'ProAuto. Подбор автомобилей. ул. Депутатская, 22'
+                        });
+                        myMap.geoObjects.add(myPlacemark);
+                    }
+                </script>
             </div>
         </div>
     </div>
 </section>
 
-<section class="pricing-section">
+<!-- Форма обратной связи -->
+<section class="contact-form-section">
     <div class="container">
-        <h2>Мы в социальных сетях</h2>
-        <p class="section-subtitle">Свяжитесь с нами через удобный мессенджер</p>
+        <h2>Остались вопросы?</h2>
+        <p class="section-subtitle">Напишите нам, и мы свяжемся с вами в ближайшее время</p>
 
-        <div class="messenger-buttons" style="justify-content: center; margin: 2rem 0;">
-            <a href="https://t.me/PSergei007" target="_blank" class="cta-button telegram">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.24-.02-.1.02-1.79 1.14-5.06 3.35-.48.33-.92.49-1.32.48-.43-.01-1.26-.24-1.87-.44-.75-.24-1.35-.37-1.3-.78.02-.17.2-.34.53-.52 2.05-1.06 3.43-1.77 5.42-2.71 2.57-1.2 3.09-1.41 3.44-1.41.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0z"/>
-                </svg>
-                Telegram
-            </a>
-
-            <a href="https://wa.me/79041111481" target="_blank" class="cta-button whatsapp">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335 .157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488"/>
-                </svg>
-                WhatsApp
-            </a>
-
-            <a href="https://max.ru/u/f9LHodD0cOK-0qj67sp3D4Zpo-HexV5mx_Ii7eG-tx305EYAsert5MTPodw" target="_blank" class="cta-button vk">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m-.84 12.73h-1.19c-.45 0-.57-.28-1.22-1.08l-.92-1.17c-.23-.28-.33-.23-.33.15v1.75c0 .21-.06.35-.51.35h-1.6c-.28 0-.4-.13-.4-.35v-3.6c0-.61.17-.84.68-.84h2.61c.28 0 .39.11.39.33v2.94c0 .28.11.23.33-.08l1.03-2.57c.11-.28.23-.28.56-.28h1.64c.39 0 .45.17.34.45l-1.48 3.34c-.17.39-.22.5 0 .5h1.19c.33 0 .45.17.33.45l-.14.22c-.17.33-.45.45-.78.45z"/>
-                </svg>
-                MAX
-            </a>
-
-            <a href="https://vk.com" target="_blank" class="cta-button vk">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m-.84 12.73h-1.19c-.45 0-.57-.28-1.22-1.08l-.92-1.17c-.23-.28-.33-.23-.33.15v1.75c0 .21-.06.35-.51.35h-1.6c-.28 0-.4-.13-.4-.35v-3.6c0-.61.17-.84.68-.84h2.61c.28 0 .39.11.39.33v2.94c0 .28.11.23.33-.08l1.03-2.57c.11-.28.23-.28.56-.28h1.64c.39 0 .45.17.34.45l-1.48 3.34c-.17.39-.22.5 0 .5h1.19c.33 0 .45.17.33.45l-.14.22c-.17.33-.45.45-.78.45z"/>
-                </svg>
-                ВКонтакте
-            </a>
-        </div>
+        <form class="contact-form" action="{{ url_for('send_email') }}" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Отправить сообщение</button>
+        </form>
     </div>
 </section>
 
+<!-- Секция "Почему нам доверяют" (оставлена без изменений, хорошо вписывается) -->
 <section class="work-process">
     <div class="container">
         <h2>Почему нам можно доверять</h2>
-
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-number">01</div>
                 <div class="step-content">
                     <h3>Опытные специалисты</h3>
-                    <p>Все наши специалисты имеют опыт работы с авто от 15 лет. Они получают хорошую зарплату, дорожат своим местом и репутацией.</p>
+                    <p>Все наши специалисты имеют опыт работы с авто от 8 лет. Они получают хорошую зарплату, дорожат своим местом и репутацией.</p>
                 </div>
             </div>
-
             <div class="process-step">
                 <div class="step-number">02</div>
                 <div class="step-content">
@@ -118,7 +184,6 @@
                     <p>Наши сотрудники никогда не вступят в сговор с продавцом! Мы гарантируем полную прозрачность всех этапов работы.</p>
                 </div>
             </div>
-
             <div class="process-step">
                 <div class="step-number">03</div>
                 <div class="step-content">
@@ -126,7 +191,6 @@
                     <p>У нас прописаны четкие стандарты к подобранному автомобилю, по которым мы работаем. Наши алгоритмы работы вас приятно удивят.</p>
                 </div>
             </div>
-
             <div class="process-step">
                 <div class="step-number">04</div>
                 <div class="step-content">
@@ -137,6 +201,5 @@
         </div>
     </div>
 </section>
-
 
 {% endblock %}
