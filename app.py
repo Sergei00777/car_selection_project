@@ -11,7 +11,7 @@ app.secret_key = 'your-secret-key-here'  # Замените на случайн�
 # Настройки почты
 SMTP_SERVER = 'smtp.mail.ru'
 SMTP_PORT = 587
-EMAIL_ADDRESS = 'oni007@mail.ru'
+EMAIL_ADDRESS = ''
 EMAIL_PASSWORD = 'пароль'  # Замените на пароль от почты
 
 
