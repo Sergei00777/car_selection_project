@@ -12,7 +12,7 @@ app.secret_key = 'your-secret-key-here'  # Замените на случайн�
 SMTP_SERVER = 'smtp.mail.ru'
 SMTP_PORT = 587
 EMAIL_ADDRESS = 'oni007@mail.ru'
-EMAIL_PASSWORD = 'dMRVVWWETHfHf7xxsx0g'  # Замените на пароль от почты
+EMAIL_PASSWORD = 'пароль'  # Замените на пароль от почты
 
 
 @app.route('/send_email', methods=['POST'])
